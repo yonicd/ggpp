@@ -16,15 +16,12 @@ test_that("factor input values returns correct numeric value", {
 })
 
 
-test_that("numeric input values returns the same value if
-          between 0 and 1", {
+test_that("numeric input values returns the same value if between 0 and 1", {
             y <- c(0.5, 1)
             expect_equal(compute_npcy(y), y)
           })
 
-test_that("numeric input values
-          returns 0 if less than 0,
-          returns 1 if greater than 1", {
+test_that("numeric input values returns 0 if less than 0, returns 1 if greater than 1", {
             y <- c(-0.5, 2)
             expect_equal(compute_npcy(y), c(0,1))
           })

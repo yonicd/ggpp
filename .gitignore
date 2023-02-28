@@ -4,3 +4,4 @@
 tests/figs
 *.log
 revdep/
+inst/doc
